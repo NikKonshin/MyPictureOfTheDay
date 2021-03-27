@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModelProviders
 import coil.api.load
 import com.example.mypictureoftheday.R
 import com.example.mypictureoftheday.material.ui.activity.MainActivity
-import com.example.mypictureoftheday.model.Data
+import com.example.mypictureoftheday.viewmodels.livedata.Data
 import com.example.mypictureoftheday.viewmodels.MainViewModel
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -58,7 +58,12 @@ class MainFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.app_bar_fav -> toast("Favourite")
-            R.id.app_bar_settings -> toast("Chips")
+            R.id.app_bar_settings -> activity
+                ?.supportFragmentManager
+                ?.beginTransaction()
+                ?.replace(R.id.container, SettingsFragment())
+                ?.addToBackStack(null)
+                ?.commit()
             android.R.id.home -> {
                 activity?.let {
                     BottomNavigationDrawerFragment().show(it.supportFragmentManager, "tag")

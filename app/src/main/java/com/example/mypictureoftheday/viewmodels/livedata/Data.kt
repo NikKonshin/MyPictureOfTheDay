@@ -1,4 +1,4 @@
-package com.example.mypictureoftheday.model
+package com.example.mypictureoftheday.viewmodels.livedata
 
 import com.example.mypictureoftheday.model.entity.ServerResponseData
 

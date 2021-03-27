@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.mypictureoftheday.BuildConfig
 import com.example.mypictureoftheday.model.ApiHolder
-import com.example.mypictureoftheday.model.Data
+import com.example.mypictureoftheday.viewmodels.livedata.Data
 import com.example.mypictureoftheday.model.entity.ServerResponseData
 import retrofit2.Call
 import retrofit2.Callback

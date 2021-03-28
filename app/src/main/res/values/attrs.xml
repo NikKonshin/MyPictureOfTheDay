@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="MyTextColor" format="reference|color"/>
+    <attr name="MyTextColorTitle" format="reference|color"/>
+    <attr name="MyBottomSheetBackgroundColor" format="reference|color"/>
+    <attr name="MyFABColor" format="reference|color"/>
+    <attr name="MyFABTintColor" format="reference|color"/>
+    <attr name="MyTextColorView" format="reference|color"/>
+    <attr name="MyColorBottomAppBar" format="reference|color"/>
+    <attr name="MyColorStrokeTextInput" format="reference|color"/>
+    <attr name="MyTextColorChip" format="reference|color"/>
+    <attr name="MyColorBackgroundChip" format="reference|color"/>
+
+
+
+</resources>

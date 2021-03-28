@@ -36,7 +36,7 @@ class SettingsFragment : Fragment() {
                     }
 
                     "Вторая"-> {
-                        CounterTheme.setTheme(R.style.Theme_MyCustom)
+                        CounterTheme.setTheme(R.style.Theme_MyCustomNight)
                         Toast.makeText(context, "Выбран ${it.id}", Toast.LENGTH_SHORT).show()
                     }
                 }

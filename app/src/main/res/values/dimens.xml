@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sheet_line_width">60dp</dimen>
+    <dimen name="sheet_line_height">3dp</dimen>
+    <dimen name="sheet_line_margin_top">5dp</dimen>
+    <dimen name="bot_sheet_tv_padding">10dp</dimen>
+    <dimen name="bot_sheet_tv_standard_margin">16dp</dimen>
+    <dimen name="bot_sheet_tv_title_text_size">16sp</dimen>
+    <dimen name="bottom_sheet_peekHeight">100dp</dimen>
+    <dimen name="standard_margin_top_heading">16dp</dimen>
+    <dimen name="standard_text_size_heading">24sp</dimen>
+    <dimen name="standard_margin_top_tv_name_chips_group">16dp</dimen>
+    <dimen name="standard_margin_start_tv_name_chips_group">16dp</dimen>
+    <dimen name="standard_margin_start_chips_group">16dp</dimen>
+    <dimen name="small_margin_top_chips_group">8dp</dimen>
+    <dimen name="small_margin_navigation_view">8dp</dimen>
+</resources>

@@ -10,7 +10,8 @@
     <attr name="MyColorStrokeTextInput" format="reference|color"/>
     <attr name="MyTextColorChip" format="reference|color"/>
     <attr name="MyColorBackgroundChip" format="reference|color"/>
-
-
-
+    <attr name="MyColorBackgroundMainEarth" format="reference|color"/>
+    <attr name="MyTabTextColor" format="reference|color"/>
+    <attr name="MyTabIndicatorColor" format="reference|color"/>
+    <attr name="MyTabBackgroundColor" format="reference|color"/>
 </resources>

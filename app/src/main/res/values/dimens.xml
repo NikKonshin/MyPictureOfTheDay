@@ -14,4 +14,5 @@
     <dimen name="standard_margin_start_chips_group">16dp</dimen>
     <dimen name="small_margin_top_chips_group">8dp</dimen>
     <dimen name="small_margin_navigation_view">8dp</dimen>
+    <dimen name="chip_width">130dp</dimen>
 </resources>

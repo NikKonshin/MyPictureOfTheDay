@@ -31,12 +31,13 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.chip.Chip
+            android:id="@+id/chip_standard_theme"
             style="@style/MyThemeChipChoice"
-            android:text="Первая" />
+            android:text="@string/standard_theme_chip" />
 
         <com.google.android.material.chip.Chip
+            android:id="@+id/chip_night_theme"
             style="@style/MyThemeChipChoice"
-            android:text="Вторая" />
-
+            android:text="@string/night_theme_chip" />
     </com.google.android.material.chip.ChipGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

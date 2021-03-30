@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">MyPictureOfTheDay</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_wiki">Найти в Википедии</string>
+    <string name="photo_of_the_day_stub">Photo of the day</string>
+    <string name="search">Поиск</string>
+    <string name="favorites">Избранное</string>
+    <string name="settings">Настройки</string>
+    <string name="bot_sheet_tv_tools_title">Two Clusters and a Comet</string>
+    <string name="bot_sheet_tv_tools_text">This lovely starfield spans csome four full moons (about 2 degrees) across the heroic northern constellation of Perseus. In telescopic exposures made during the nights of January 24, 26, and 28 it holds the famous pair of open or galactic star clusters h and Chi Persei with comet PanSTARRS (C/2017 T2) captured each night as it swept left to right across the field of view. Also cataloged as NGC 869 (right) and NGC 884, both star clusters are about 7,000 light-years away and contain stars much younger and hotter than the Sun. Separated by only a few hundred light-years, the clusters are both 13 million years young based on the ages of their individual stars, evidence that they were likely a product of the same star-forming region. Discovered in 2017 while still beyond the orbit of Saturn, Comet PanSTARRs is a new visitor to the inner solar system and just over 13 light-minutes from planet Earth. Always a rewarding sight in binoculars, the Double Cluster is even visible to the unaided eye from dark locations. C/2017 T2 could remain a telescopic comet though. One of the brightest comets anticipated in 2020 it makes its closest approach to the Sun in early May.</string>
+    <string name="enter_theme">Выберите тему</string>
+    <string name="tap_today">СЕГОДНЯ</string>
+    <string name="earth_nav_menu">Земля</string>
+    <string name="picture_of_the_day_nav_menu">Картинка дня</string>
+    <string name="standard_theme_chip">СТАНДАРТНАЯ</string>
+    <string name="night_theme_chip">НОЧНАЯ</string>
 </resources>

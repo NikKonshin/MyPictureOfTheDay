@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/navigation_one"
+            android:icon="@drawable/ic_earth"
+            android:title="@string/earth_nav_menu" />
+        <item
+            android:id="@+id/navigation_two"
+            android:icon="@drawable/ic_photo"
+            android:title="@string/picture_of_the_day_nav_menu" />
+    </group>
+</menu>

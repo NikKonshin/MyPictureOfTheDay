@@ -7,8 +7,25 @@
 
 <androidx.core.widget.NestedScrollView
     style="@style/MyNestedScrollViewFragmentMain">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        style="@style/MyThemeConstraintLayoutFragmentMain">
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        style="@style/MyThemeConstraintLayoutFragmentMain"
+        app:layoutDescription="@xml/motion_scene_wiki"
+        tools:showPaths="true">
+
+        <ImageView
+            android:id="@+id/wiki_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@id/image_view_main_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_wikipedia" />
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_main_fragment"
             style="@style/MyThemeTextInputLayoutFragmentMain"
@@ -17,8 +34,9 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_main_fragment"
                 style="@style/MyThemeTextInputEditTextFragmentMain"
-                android:id="@+id/input_edit_text_main_fragment"/>
+ />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.example.mypictureoftheday.material.util.EquilateralImageView
@@ -29,7 +47,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/input_layout_main_fragment"
             app:srcCompat="@drawable/ic_no_photo_vector"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.motion.widget.MotionLayout>
 </androidx.core.widget.NestedScrollView>
 
     <include layout="@layout/bottom_sheet_layout" />

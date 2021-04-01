@@ -24,7 +24,6 @@ class EarthPictureFragment : Fragment() {
         private const val MY_DAY_BEFORE_YESTERDAY = "my day before yesterday"
         private const val ID_KEY = "id_key"
 
-        private var isMain = true
         fun newInstance(idDay: String) =
             EarthPictureFragment().apply {
                 arguments = Bundle().apply {

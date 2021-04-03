@@ -62,19 +62,19 @@ class MainEarthFragment : Fragment() {
         val context = activity as MainActivity
         context.setSupportActionBar(view.findViewById(R.id.bottom_app_bar))
         setHasOptionsMenu(true)
-        fab.setOnClickListener {
+        fab_earth_main.setOnClickListener {
             if (MainEarthFragment.isMain) {
                 MainEarthFragment.isMain = false
                 bottom_app_bar.navigationIcon = null
                 bottom_app_bar.fabAlignmentMode = BottomAppBar.FAB_ALIGNMENT_MODE_END
-                fab.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_back_fab))
+                fab_earth_main.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_back_fab))
                 bottom_app_bar.replaceMenu(R.menu.menu_bottom_bar_other_screen)
             } else {
                 MainEarthFragment.isMain = true
                 bottom_app_bar.navigationIcon =
                     ContextCompat.getDrawable(context, R.drawable.ic_hamburger_menu_bottom_bar)
                 bottom_app_bar.fabAlignmentMode = BottomAppBar.FAB_ALIGNMENT_MODE_CENTER
-                fab.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_plus_fab))
+                fab_earth_main.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_plus_fab))
                 bottom_app_bar.replaceMenu(R.menu.menu_bottom_bar)
             }
         }

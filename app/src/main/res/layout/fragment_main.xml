@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_main_fragment"
     style="@style/MyThemeCoordinatorLayoutFragmentMain"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.mypictureoftheday.material.ui.fragments.MainFragment">
@@ -8,6 +9,7 @@
 <androidx.core.widget.NestedScrollView
     style="@style/MyNestedScrollViewFragmentMain">
     <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motion_layout_main_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingStart="10dp"
@@ -29,6 +31,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_main_fragment"
             style="@style/MyThemeTextInputLayoutFragmentMain"
+            app:layout_constraintBottom_toTopOf="@id/image_view_main_fragment"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -39,13 +42,23 @@
  />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/video_view_main_fragment"
+            android:layout_marginTop="45dp"
+            app:layout_constraintBottom_toBottomOf="@id/motion_layout_main_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wiki_button"/>
+
         <com.example.mypictureoftheday.material.util.EquilateralImageView
             android:id="@+id/image_view_main_fragment"
             style="@style/MyThemeEquilateralImageViewFragmentMain"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/input_layout_main_fragment"
+            app:layout_constraintTop_toBottomOf="@id/wiki_button"
             app:srcCompat="@drawable/ic_no_photo_vector"/>
         </androidx.constraintlayout.motion.widget.MotionLayout>
 </androidx.core.widget.NestedScrollView>

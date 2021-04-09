@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.mypictureoftheday.R
-import com.example.mypictureoftheday.material.ui.ViewPagerAdapter
+import com.example.mypictureoftheday.material.ui.adapters.ViewPagerAdapter
 import com.example.mypictureoftheday.material.ui.activity.MainActivity
 import com.google.android.material.bottomappbar.BottomAppBar
 import kotlinx.android.synthetic.main.fragment_main_earth.*
@@ -67,14 +67,24 @@ class MainEarthFragment : Fragment() {
                 MainEarthFragment.isMain = false
                 bottom_app_bar.navigationIcon = null
                 bottom_app_bar.fabAlignmentMode = BottomAppBar.FAB_ALIGNMENT_MODE_END
-                fab_earth_main.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_back_fab))
+                fab_earth_main.setImageDrawable(
+                    ContextCompat.getDrawable(
+                        context,
+                        R.drawable.ic_back_fab
+                    )
+                )
                 bottom_app_bar.replaceMenu(R.menu.menu_bottom_bar_other_screen)
             } else {
                 MainEarthFragment.isMain = true
                 bottom_app_bar.navigationIcon =
                     ContextCompat.getDrawable(context, R.drawable.ic_hamburger_menu_bottom_bar)
                 bottom_app_bar.fabAlignmentMode = BottomAppBar.FAB_ALIGNMENT_MODE_CENTER
-                fab_earth_main.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_plus_fab))
+                fab_earth_main.setImageDrawable(
+                    ContextCompat.getDrawable(
+                        context,
+                        R.drawable.ic_plus_fab
+                    )
+                )
                 bottom_app_bar.replaceMenu(R.menu.menu_bottom_bar)
             }
         }

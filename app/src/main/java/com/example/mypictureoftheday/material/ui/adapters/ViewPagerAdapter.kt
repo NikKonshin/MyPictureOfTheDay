@@ -1,4 +1,4 @@
-package com.example.mypictureoftheday.material.ui
+package com.example.mypictureoftheday.material.ui.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

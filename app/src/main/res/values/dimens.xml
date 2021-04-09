@@ -15,4 +15,7 @@
     <dimen name="small_margin_top_chips_group">8dp</dimen>
     <dimen name="small_margin_navigation_view">8dp</dimen>
     <dimen name="chip_width">130dp</dimen>
+    <dimen name="standard_margin_item_rv_to_do_list">16dp</dimen>
+    <dimen name="et_title_item_rv_to_do_list_width">250dp</dimen>
+    <dimen name="et_title_item_rv_to_do_list_height">24dp</dimen>
 </resources>

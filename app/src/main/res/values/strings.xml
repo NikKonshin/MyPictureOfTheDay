@@ -14,4 +14,5 @@
     <string name="picture_of_the_day_nav_menu">Картинка дня</string>
     <string name="standard_theme_chip">СТАНДАРТНАЯ</string>
     <string name="night_theme_chip">НОЧНАЯ</string>
+    <string name="to_do_list">Список дел</string>
 </resources>

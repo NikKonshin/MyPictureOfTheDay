@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MyThemeLayoutsMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MyThemeLayoutsWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyThemeLayoutsMPAndWP">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MyThemeTextBottomSheetLayout" parent="MyThemeLayoutsWrapContent">
+        <item name="android:layout_marginTop">@dimen/sheet_line_margin_top</item>
+        <item name="android:paddingStart">@dimen/bot_sheet_tv_padding</item>
+        <item name="android:paddingEnd">@dimen/bot_sheet_tv_padding</item>
+    </style>
+
+    <!--    MainActivityThemes-->
+    <style name="MyThemeFrameLayoutMainActivity" parent="MyThemeLayoutsMatchParent">
+        <item name="android:background">?backgroundColor</item>
+    </style>
+
+    <!--    MainFragmentThemes-->
+    <style name="MyThemeTextInputLayoutFragmentMain" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/search_wiki</item>
+        <item name="counterEnabled">true</item>
+        <item name="counterMaxLength">20</item>
+        <item name="endIconCheckable">true</item>
+        <item name="endIconDrawable">@drawable/ic_wikipedia</item>
+        <item name="endIconMode">custom</item>
+        <item name="helperText">Поищите термин в википедии</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:textColorHighlight">?MyTextColorView</item>
+        <item name="helperTextTextColor">?MyTextColorView</item>
+        <item name="counterTextColor">?MyTextColorView</item>
+        <item name="android:textColorHint">?MyTextColorView</item>
+        <item name="hintTextColor">?MyTextColorView</item>
+        <item name="endIconTint">?MyTextColorView</item>
+        <item name="boxStrokeColor">?MyColorStrokeTextInput</item>
+
+    </style>
+
+    <style name="MyThemeTextInputEditTextFragmentMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?MyTextColorView</item>
+    </style>
+
+    <style name="MyNestedScrollViewFragmentMain" parent="MyThemeLayoutsMatchParent">
+    </style>
+
+
+    <style name="MyThemeCoordinatorLayoutFragmentMain" parent="MyThemeLayoutsMatchParent" />
+
+    <style name="MyThemeEquilateralImageViewFragmentMain" parent="MyThemeLayoutsMatchParent">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:contentDescription">@string/photo_of_the_day_stub</item>
+    </style>
+
+    <style name="MyThemeConstraintLayoutFragmentMain" parent="MyThemeLayoutsMatchParent">
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="MyThemeBottomAppBarFragmentMain" parent="MyThemeLayoutsMPAndWP">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:backgroundTint">?MyColorBottomAppBar</item>
+        <item name="fabAlignmentMode">center</item>
+        <item name="hideOnScroll">true</item>
+    </style>
+
+    <style name="MyThemeFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">?MyFABColor</item>
+        <item name="tint">@color/white</item>
+        <item name="backgroundTint">?MyFABTintColor</item>
+    </style>
+
+    <!--    BottomSheetLayoutThemes-->
+    <style name="MyThemeConstraintLayoutBottomSheetLayout" parent="MyThemeLayoutsMatchParent">
+        <item name="android:background">?MyBottomSheetBackgroundColor</item>
+        <item name="behavior_hideable">false</item>
+        <item name="behavior_peekHeight">@dimen/bottom_sheet_peekHeight</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="MyThemeViewSheetLineBottomSheetLayout">
+        <item name="android:layout_width">@dimen/sheet_line_width</item>
+        <item name="android:layout_height">@dimen/sheet_line_height</item>
+        <item name="android:layout_marginTop">@dimen/sheet_line_margin_top</item>
+        <item name="android:background">@color/sheet_line_background</item>
+    </style>
+
+    <style name="MyThemeTextTitleBottomSheetLayout" parent="MyThemeTextBottomSheetLayout">
+        <item name="android:textColor">?attr/MyTextColorTitle</item>
+        <item name="android:textSize">@dimen/bot_sheet_tv_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyThemeTextDescriptionBottomSheetLayout" parent="MyThemeTextBottomSheetLayout">
+        <item name="android:textColor">?attr/MyTextColor</item>
+    </style>
+
+    <!--    SettingsFragment-->
+    <style name="MyThemeTextViewHeading" parent="MyThemeLayoutsWrapContent">
+        <item name="android:layout_marginTop">@dimen/standard_margin_top_heading</item>
+        <item name="android:textSize">@dimen/standard_text_size_heading</item>
+        <item name="android:textColor">?MyTextColorTitle</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="MyThemeTVNameChipsGroupTextView" parent="MyThemeLayoutsWrapContent">
+        <item name="android:textColor">?MyTextColor</item>
+        <item name="android:layout_marginTop">@dimen/standard_margin_top_tv_name_chips_group</item>
+        <item name="android:layout_marginStart">@dimen/standard_margin_start_tv_name_chips_group
+        </item>
+    </style>
+
+    <style name="MyThemeChipsGroup" parent="MyThemeLayoutsWrapContent">
+        <item name="android:layout_marginTop">@dimen/small_margin_top_chips_group</item>
+        <item name="android:layout_marginStart">@dimen/standard_margin_start_chips_group</item>
+        <item name="singleSelection">true</item>
+
+    </style>
+
+    <style name="MyThemeChipChoice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">?MyTextColorChip</item>
+        <item name="android:layout_width">@dimen/chip_width</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="chipBackgroundColor">?MyColorBackgroundChip</item>
+    </style>
+
+    <style name="MyThemeNavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginTop">@dimen/small_margin_navigation_view</item>
+        <item name="android:layout_marginStart">@dimen/small_margin_navigation_view</item>
+        <item name="android:layout_marginEnd">@dimen/small_margin_navigation_view</item>
+        <item name="itemTextColor">?MyTextColorChip</item>
+        <item name="itemIconTint">?MyTextColorChip</item>
+    </style>
+
+    <style name="MyThemeCoordinatorLayoutFragmentMainEarth" parent="MyThemeLayoutsMatchParent">
+        <item name="android:background">?MyColorBackgroundMainEarth</item>
+    </style>
+
+    <style name="MyThemeTabFragmentMainEarth" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">?MyTabBackgroundColor</item>
+        <item name="tabTextColor">?MyTabTextColor</item>
+        <item name="tabIndicatorColor">?MyTabIndicatorColor</item>
+    </style>
+
+</resources>

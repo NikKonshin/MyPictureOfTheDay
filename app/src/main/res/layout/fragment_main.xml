@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_main_fragment"
+    style="@style/MyThemeCoordinatorLayoutFragmentMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.mypictureoftheday.material.ui.fragments.MainFragment">
+
+<androidx.core.widget.NestedScrollView
+    style="@style/MyNestedScrollViewFragmentMain">
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motion_layout_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/MyThemeConstraintLayoutFragmentMain"
+        app:layoutDescription="@xml/motion_scene_wiki"
+        tools:showPaths="true">
+
+        <ImageView
+            android:id="@+id/wiki_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_end_wiki_button"
+            android:layout_marginBottom="@dimen/margin_bottom_wiki_button"
+            app:layout_constraintBottom_toTopOf="@id/image_view_main_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_wikipedia" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_main_fragment"
+            style="@style/MyThemeTextInputLayoutFragmentMain"
+            app:layout_constraintBottom_toTopOf="@id/image_view_main_fragment"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_edit_text_main_fragment"
+                style="@style/MyThemeTextInputEditTextFragmentMain"
+ />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/video_view_main_fragment"
+            android:layout_marginTop="@dimen/margin_top_web_view_main_fragmrnt"
+            app:layout_constraintBottom_toBottomOf="@id/motion_layout_main_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wiki_button"/>
+
+        <com.example.mypictureoftheday.material.util.EquilateralImageView
+            android:id="@+id/image_view_main_fragment"
+            style="@style/MyThemeEquilateralImageViewFragmentMain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wiki_button"
+            app:srcCompat="@drawable/ic_no_photo_vector"/>
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/bottom_sheet_layout" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        style="@style/MyThemeBottomAppBarFragmentMain"
+        app:navigationIcon="@drawable/ic_hamburger_menu_bottom_bar"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        app:layout_anchor="@id/bottom_app_bar"
+        style="@style/MyThemeFloatingActionButton"
+        app:srcCompat="@drawable/ic_plus_fab"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

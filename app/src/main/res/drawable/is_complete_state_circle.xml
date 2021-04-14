@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/is_complete"
+            android:drawable="@drawable/ic_check_circle"
+            android:state_checked="true" />
+
+        <item
+            android:id="@+id/not_complete"
+            android:drawable="@drawable/ic_check_circle_outline"
+            android:state_checked="false" />
+
+        <transition
+            android:drawable="@drawable/ic_check_circle"
+            android:fromId="@id/not_complete"
+            android:toId="@id/is_complete" />
+
+        <transition
+            android:drawable="@drawable/ic_check_circle_outline"
+            android:fromId="@id/is_complete"
+            android:toId="@id/not_complete" />
+    </animated-selector>

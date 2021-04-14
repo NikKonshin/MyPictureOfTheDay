@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_container"
+    style="@style/MyThemeConstraintLayoutBottomSheetLayout"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <View
+        android:id="@+id/bottom_sheet_line"
+        style="@style/MyThemeViewSheetLineBottomSheetLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_description_header"
+        style="@style/MyThemeTextTitleBottomSheetLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_line"
+        tools:text="@string/bot_sheet_tv_tools_title" />
+
+    <TextView
+        android:id="@+id/bottom_sheet_description"
+        style="@style/MyThemeTextDescriptionBottomSheetLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_description_header"
+        tools:text="@string/bot_sheet_tv_tools_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

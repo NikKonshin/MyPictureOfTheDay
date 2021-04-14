@@ -38,8 +38,9 @@
         <item name="endIconDrawable">@drawable/ic_wikipedia</item>
         <item name="endIconMode">custom</item>
         <item name="helperText">Поищите термин в википедии</item>
-        <item name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">@dimen/standard_margin_text_layout_main_fragment</item>
+        <item name="android:layout_marginStart">@dimen/standard_margin_text_layout_main_fragment</item>
+        <item name="android:layout_marginEnd">@dimen/standard_margin_text_layout_main_fragment</item>
         <item name="layout_constraintTop_toTopOf">parent</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
         <item name="layout_constraintStart_toStartOf">parent</item>
@@ -66,7 +67,7 @@
     <style name="MyThemeCoordinatorLayoutFragmentMain" parent="MyThemeLayoutsMatchParent" />
 
     <style name="MyThemeEquilateralImageViewFragmentMain" parent="MyThemeLayoutsMatchParent">
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">45dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:contentDescription">@string/photo_of_the_day_stub</item>
@@ -114,6 +115,7 @@
 
     <style name="MyThemeTextDescriptionBottomSheetLayout" parent="MyThemeTextBottomSheetLayout">
         <item name="android:textColor">?attr/MyTextColor</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <!--    SettingsFragment-->
@@ -165,4 +167,11 @@
         <item name="tabIndicatorColor">?MyTabIndicatorColor</item>
     </style>
 
+    <style name="MyThemePatentMotionLayoutToDoListFragment" parent="MyThemeLayoutsMPAndWP">
+        <item name="android:minHeight">@dimen/min_height_item_rv_to_do_list</item>
+        <item name="android:layout_marginTop">@dimen/standard_margin_item_rv_to_do_list</item>
+        <item name="android:layout_marginEnd">@dimen/standard_margin_item_rv_to_do_list</item>
+        <item name="android:layout_marginStart">@dimen/standard_margin_item_rv_to_do_list</item>
+        <item name="android:background">@color/sheet_line_background</item>
+    </style>
 </resources>

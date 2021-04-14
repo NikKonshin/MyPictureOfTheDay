@@ -5,9 +5,10 @@
     <dimen name="sheet_line_margin_top">5dp</dimen>
     <dimen name="bot_sheet_tv_padding">10dp</dimen>
     <dimen name="bot_sheet_tv_standard_margin">16dp</dimen>
-    <dimen name="bot_sheet_tv_title_text_size">16sp</dimen>
+    <dimen name="bot_sheet_tv_title_text_size">22sp</dimen>
     <dimen name="bottom_sheet_peekHeight">100dp</dimen>
     <dimen name="standard_margin_top_heading">16dp</dimen>
+    <dimen name="standard_margin_text_layout_main_fragment">16dp</dimen>
     <dimen name="standard_text_size_heading">24sp</dimen>
     <dimen name="standard_margin_top_tv_name_chips_group">16dp</dimen>
     <dimen name="standard_margin_start_tv_name_chips_group">16dp</dimen>
@@ -18,4 +19,9 @@
     <dimen name="standard_margin_item_rv_to_do_list">16dp</dimen>
     <dimen name="et_title_item_rv_to_do_list_width">250dp</dimen>
     <dimen name="et_title_item_rv_to_do_list_height">24dp</dimen>
+    <dimen name="min_height_item_rv_to_do_list">100dp</dimen>
+    <dimen name="text_size_et_title_item_rv_to_do_list">24sp</dimen>
+    <dimen name="margin_bottom_wiki_button">10dp</dimen>
+    <dimen name="margin_end_wiki_button">8dp</dimen>
+    <dimen name="margin_top_web_view_main_fragmrnt">45dp</dimen>
 </resources>

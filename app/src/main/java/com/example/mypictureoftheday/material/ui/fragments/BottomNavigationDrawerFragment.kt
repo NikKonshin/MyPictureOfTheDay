@@ -35,6 +35,7 @@ class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
                 }
                 R.id.navigation_three -> {
                     fragmentManager?.beginTransaction()?.replace(R.id.container, ToDoListFragment())
+                        ?.addToBackStack(null)
                         ?.commit()
                 }
             }

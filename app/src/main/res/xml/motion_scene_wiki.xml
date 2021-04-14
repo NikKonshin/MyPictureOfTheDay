@@ -16,20 +16,9 @@
         motion:duration="1000">
         <OnSwipe
             motion:touchAnchorId="@+id/input_layout_main_fragment"
-            motion:touchAnchorSide="start"
+            motion:touchAnchorSide="left"
             motion:dragDirection="dragEnd"
-            motion:maxVelocity="100"/>
-    </Transition>
-
-    <Transition
-        motion:constraintSetStart="@+id/end"
-        motion:constraintSetEnd="@+id/start"
-        motion:duration="1000">
-        <OnSwipe
-            motion:touchAnchorId="@+id/input_edit_text_main_fragment"
-            motion:touchAnchorSide="start"
-            motion:dragDirection="dragEnd"
-            motion:maxVelocity="100"/>
+            motion:maxVelocity="1000"/>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">

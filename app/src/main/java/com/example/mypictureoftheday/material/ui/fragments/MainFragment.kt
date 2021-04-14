@@ -1,8 +1,13 @@
 package com.example.mypictureoftheday.material.ui.fragments
 
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.BackgroundColorSpan
+import android.text.style.ForegroundColorSpan
 import android.view.*
 import android.widget.ImageView
 import android.widget.Toast
@@ -158,12 +163,6 @@ class MainFragment : Fragment() {
                             error(R.drawable.ic_load_error_vector)
                             placeholder(R.drawable.ic_no_photo_vector)
                         }
-                        if (description == null) {
-                            toast("Description is empty")
-                        } else {
-                            bottom_sheet_description.text = description
-                            bottom_sheet_description_header.text = title
-                        }
                     } else if (contentType == "video") {
                         video_view_main_fragment.visibility = VideoView.VISIBLE
                         image_view_main_fragment.visibility = ImageView.GONE
@@ -175,11 +174,30 @@ class MainFragment : Fragment() {
                             true
                         video_view_main_fragment.loadUrl(uri)
                     }
+
                     if (description == null) {
                         toast("Description is empty")
                     } else {
-                        bottom_sheet_description.text = description
-                        bottom_sheet_description_header.text = title
+                        val spannableDescription = SpannableString(description)
+                        spannableDescription.setSpan(
+                            context?.getColor(R.color.color_gray)?.let { BackgroundColorSpan(it) },
+                            0,description.length,
+                            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                        )
+
+                        spannableDescription.setSpan(
+                            ForegroundColorSpan(Color.WHITE),
+                            0,description.length,
+                            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                        )
+                        val spannableTitle = SpannableString(title)
+                        spannableTitle.setSpan(
+                            ForegroundColorSpan(Color.RED),
+                            0,title.length,
+                            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+                        )
+                        bottom_sheet_description.text = spannableDescription
+                        bottom_sheet_description_header.text = spannableTitle
                     }
                 }
             }
